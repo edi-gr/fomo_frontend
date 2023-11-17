@@ -46,10 +46,20 @@ export default function Home() {
             Connect Wallet
           </button>
         </div>
+        <div>
+          {/* <div onClick={() => setSidebarOpen(!isSidebarOpen)} className="cursor-pointer">
+      <Image src={hamburger} alt="FOMO" width={42} height={5} />
+    </div>
+
+        {/* code for sidebar */}
+        </div>
+
         <div className="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w[300px] overflow-y-auto text-center bg-gray-900 md:hidden">
           <div className="inter">
             <div className="p-2.5 mt-1 flex items-center flex-col space-y-7">
-              <Image src={hamburger} alt="FOMO" width={42} height={5} />
+              <button>
+                <Image src={hamburger} alt="FOMO" width={42} height={5} />
+              </button>
               <button
                 type="button"
                 className="focus:outline-none text-white bg-[#8A078A] hover:bg-[#F200F2] focus:ring-4 focus:ring-purple-300 font-medium rounded-md text-sm px-5 py-2.5 mb-2 mt-1"
@@ -79,6 +89,7 @@ export default function Home() {
               </button>
             </div>
           </div>
+
           {/* <button className="md:hidden">
 
           <Image src={hamburger} alt="FOMO" width={42} height={5} />
