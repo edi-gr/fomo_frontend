@@ -6,6 +6,76 @@
 @tailwind components;
 @tailwind utilities;
 
+.glass {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url("../public/assets/background.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(7px);
+  z-index: 1;
+}
+
+.claim-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 20px;
+  border: 2px solid purple;
+  background: #171717; /* Change this line */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 40%;
+}
+
+@media (min-width: 1024px) {
+  .hamburger-icon {
+    display: none;
+  }
+}
+
+.claim-button {
+  background-color: #f200f2;
+  width: full;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.glass::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(8px);
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .koulen {
   font-family: "Koulen", cursive;
 }
