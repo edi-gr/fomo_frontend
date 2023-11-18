@@ -98,7 +98,7 @@ export default function Home() {
             className="sidebar overflow-y-auto text-center bg-gray-900 md:hidden "
           >
             <div className="inter">
-              <div className="p-2.5 mt-1 flex flex-start flex-col space-y-5 mt-10">
+              <div className="p-2.5 mt-1 flex flex-start flex-col space-y-5">
                 <button
                   type="button"
                   className="focus:outline-none text-white bg-[#8A078A] hover:bg-[#F200F2] focus:ring-4 focus:ring-purple-300 font-medium rounded-md text-sm px-5 py-2.5 mb-0.25 mt-4"
@@ -198,9 +198,7 @@ export default function Home() {
 
                 <h1 className="text-[#F0F0F0] text-lg changa">00 $fomo</h1>
               </div>
-              {/* <div >
-                <hr className="w-[80%] mx-auto bg-[#25282D] border-0 rounded" />
-              </div> */}
+
               <div className="w-full bg-[#25282D] rounded-full h-2.5">
                 <div
                   className="bg-[#F200F2] h-2.5 rounded-full"
@@ -209,7 +207,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div></div>
+        </div>
+        <div>
+          <h1 className="flex flex-wrap justify-center inter text-lg md:text-xl text-[#E9E9E9] whitespace-normal md:-mr-15 lg:-mr-50 xl:-mr-60 ">
+            **you will only be able to claim once
+          </h1>
         </div>
       </div>
     </div>
